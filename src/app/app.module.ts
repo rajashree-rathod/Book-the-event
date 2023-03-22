@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
+import { CardInfoComponent } from './user/card-info/card-info.component';
 
 
 
@@ -31,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     LoginComponent,
     UserComponent,
-    HomeComponent
+    HomeComponent,
+    CardInfoComponent
   ],
   imports: [
     BrowserModule,

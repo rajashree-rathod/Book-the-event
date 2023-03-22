@@ -1,34 +1,27 @@
-<div class="container">
-  
-  
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/">Book The Event</a>
+    </div>
 
-<mat-toolbar class="example-spacer">
-    <span >BookTheEvent</span>
-    <br>
-    <form class="example-form">
-        <!-- <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label >search</mat-label>
-          <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
-          <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
-            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-              {{option.name}}
-            </mat-option>
-          </mat-autocomplete>
-        </mat-form-field> -->
-        <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Search</mat-label>
-            <mat-icon matPrefix>search</mat-icon>
-            <input type="text" matInput placeholder="Type something..">
-        </mat-form-field>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
       </form>
-      <nav class="navbar-brand navbar-right">
-        <ul class="nav navbar-nav">
-          <li routerLinkActive="active"><a routerLink="home">Home</a></li>
-          <li routerLinkActive="active"><a routerLink="user">User</a></li>
-          <li routerLinkActive="active"><a routerLink="login">Login</a></li>
-        </ul>
-    </nav>
-   
-</mat-toolbar>
-</div>
- 
+      <ul class="nav navbar-nav navbar-right">
+        <li routerLinkActive="active"><a routerLink="/user">User</a></li>
+        <li *ngIf="isLoggedIn" routerLinkActive="active"><a routerLink="/user">Logout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
