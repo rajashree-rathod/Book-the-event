@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import {Observable} from 'rxjs';
-import {map, startWith} from 'rxjs/operators';
+import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service'
 
 export interface User {
@@ -18,7 +16,7 @@ export class HeaderComponent implements OnInit {
   
   isLoggedIn!: boolean;
 
-  constructor(private authService: AuthService){
+  constructor(private authService: AuthService , private router :Router){
 
   }
 
@@ -26,6 +24,12 @@ export class HeaderComponent implements OnInit {
     this.authService.isLoggedIn.subscribe((res:boolean) => {
       this.isLoggedIn = res;
     })
+  }
+
+  onLogout(){
+     this.router.navigate(['/'])
+
+
   }
 
 }
