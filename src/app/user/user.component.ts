@@ -8,7 +8,7 @@ import { UserModel } from './user-model';
 })
 
 export class UserComponent implements OnInit {
- imageNames = ['ikigai1.PNG', 'mrutunjay1.PNG', 'ikigai1.PNG', 'mrutunjay1.PNG']
+ imageNames = ['mrutunjay1.PNG', 'ikigai1.PNG','alchemist1.PNG']
  ngOnInit(){
    
  }
