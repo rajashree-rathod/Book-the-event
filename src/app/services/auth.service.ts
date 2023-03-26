@@ -17,6 +17,7 @@ export class AuthService {
       this.isLoggedIn.next(true);
       this.router.navigate(['/user']);
     }
+    
   }
 
 }

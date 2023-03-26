@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +22,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { CardInfoComponent } from './user/card-info/card-info.component';
+import { BookInfoComponent } from './user/book-info/book-info.component';
+import { FictionBookComponent } from './fiction-book/fiction-book.component';
 
 
 
@@ -33,7 +37,10 @@ import { CardInfoComponent } from './user/card-info/card-info.component';
     LoginComponent,
     UserComponent,
     HomeComponent,
-    CardInfoComponent
+    CardInfoComponent,
+    BookInfoComponent,
+    FictionBookComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -48,7 +55,8 @@ import { CardInfoComponent } from './user/card-info/card-info.component';
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

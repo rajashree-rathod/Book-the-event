@@ -1,5 +1,5 @@
-
-<mat-card>
+<!-- 
+<mat-card style="background-color:cornsilk;">
     <mat-card-content>
        <div class="header">
         <h2>LOGIN</h2>
@@ -9,9 +9,7 @@
             <mat-form-field class="full-width" appearance="outline">
                 <mat-label>Email/Username</mat-label>
                     <input type="text" formControlName="email" matInput required>
-                    <!-- <mat-error *ngIf="loginForm.get('email').errors?.required">
-                        Please enter email Id 
-                    </mat-error> -->
+                    
             </mat-form-field>
         </div>
         <div class="header">
@@ -28,4 +26,56 @@
        </form>
     </mat-card-content>
    
-</mat-card>
+</mat-card> -->
+<!-- Background image -->
+<div class="bg-image" 
+     style="background-image: url('https://images.unsplash.com/photo-1617360547704-3da8b5363369?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            height: 100vh">
+
+<!-- Background image -->
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100 ">
+      <div class="row d-flex justify-content-center align-items-center h-90">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+         </div>
+        <div class="col-md-4 col-lg-5 col-xl-5 offset-xl-1">
+          <div class="card blur-card" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                <p class="text-black-50 mb-5">Please enter your login and password!</p>
+                <form (ngSubmit)="onLogin(loginForm)" name="loginForm" [formGroup]="loginForm">
+                <div class="form-outline form-white mb-4">
+                    
+                    <input type="text" placeholder="Email" formControlName="email" matInput 
+                    class="form-control form-control-lg" required>
+        
+                </div>
+  
+                <div class="form-outline form-white mb-4">
+                    <input formControlName="password" matInput placeholder="Password" type="password" 
+                    class="form-control form-control-lg"  required>
+                  
+                </div>
+  
+                <p class="small mb-5 pb-lg-2"><a class="text-black-50" href="#!">Forgot password?</a></p>
+  
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+              </form>
+  
+              </div>
+  
+              <div>
+                <p class="mb-0">Don't have an account? <a href="#!" class="text-black-50 fw-bold">Sign Up</a>
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
