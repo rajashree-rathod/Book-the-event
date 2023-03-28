@@ -1,3 +1,5 @@
+
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { UserModel } from './user-model';
 
@@ -7,12 +9,14 @@ import { UserModel } from './user-model';
   styleUrls: ['./user.component.scss']
 })
 
-export class UserComponent implements OnInit {
- imageNames = ['ikigai1.PNG','atomichabit1.PNG','pyschologyofMoney1.PNG','thinkandgrowrich.PNG'];
+export class UserComponent  {
+ imageNames = ['ikigai1.PNG','atomichabit1.PNG','pyschologyofMoney1.PNG','thinkandgrowrich.PNG','lifeofPI.PNG','lightcanotc.PNG'];
  fictionBook =['lifeofPI.PNG','lightcanotc.PNG','Prideandprejudice.PNG'];
- ngOnInit(){
-   
- }
 
- 
+
+ drop(event: CdkDragDrop<string[]>) {
+  console.log("previous index== ",event.previousIndex)
+  console.log("current index== ",event.currentIndex)
+  moveItemInArray(this.imageNames, event.previousIndex, event.currentIndex);
+}
 }

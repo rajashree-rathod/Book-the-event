@@ -1,13 +1,19 @@
    <div class="container">
    <h2>Recommanded Books</h2>
-   <div class="container">
-    <app-card-info *ngFor="let i of imageNames" [bookName]="i"></app-card-info>
-   </div>
+   <div class="container" > 
+    <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" 
+    (cdkDropListDropped)="drop($event)">
+        
+    <div class="example-box"  class="example-list"  *ngFor="let i of imageNames"   cdkDrag>
+    <app-card-info  [bookName]="i"  ></app-card-info>
+    </div>
+</div>
+</div>
 
 <br>
 <br>
-<h2>Best Book for You</h2>
+<!-- <h2>Best Book for You</h2>
 <div class="container">
     <app-fiction-book *ngFor="let i of fictionBook" [fictnBook]="i"></app-fiction-book>
-</div>
+</div> -->
 </div>  

@@ -1,6 +1,17 @@
-<div class="card p-0" style="width: 20rem; display: inline-block; margin: 15px;">
+
+<div class="card p-0" style="width: 20rem; display: inline-block; margin: 15px;" cdkDrag >
     <img class="card-img-top" src="assets/img/{{bookName}}" alt="Card image cap" style="width: 19.95rem; height: 30rem;">
-    <div class="card-body p-1">
+    <div class="card-body p-1" >
       <button class="btn btn-secondary btn-block" routerLink="/user/1">Book Details</button>
     </div>
   </div>
+
+  <!-- <div class="card p-0" style="display: inline-block; >
+    <div class="card-body" style="display: inline-block" cdkDrag>
+        <img src="assets/img/{{bookName}}" width="250"  alt="bookname">
+    </div>
+    
+    <div class="text-center">
+        <button mat-raised-button color="primary" routerLink="/user/1">Book details</button>
+    </div>
+</div> -->
