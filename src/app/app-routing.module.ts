@@ -13,8 +13,8 @@ const routes: Routes = [
       {path: '', component:HomeComponent, children: [
         {path: '', component:LoginComponent},
         {path: 'user',component:UserComponent,canActivate:[AuthguardGuard] },
-        {path: 'user/1', component:BookInfoComponent},
-        {path:'user/fiction', component:FictionBookComponent,}
+        {path: 'user/:id', component:BookInfoComponent},
+        // {path:'user/fiction', component:FictionBookComponent,}
       ]},
 
 

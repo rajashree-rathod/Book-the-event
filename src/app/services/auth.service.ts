@@ -17,6 +17,9 @@ export class AuthService {
       this.isLoggedIn.next(true);
       this.router.navigate(['/user']);
     }
+    else{
+      alert("Please enter correct password")
+    }
     
   }
 

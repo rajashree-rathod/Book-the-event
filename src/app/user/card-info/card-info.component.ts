@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-card-info',
   templateUrl: './card-info.component.html',
   styleUrls: ['./card-info.component.scss'],
-  inputs: ['bookName']
+  inputs: ['bookInfo']
 })
 export class CardInfoComponent {
-  bookName!: string;
+  bookInfo!: any;
   
 }

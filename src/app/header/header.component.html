@@ -7,12 +7,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="form-inline my-2 my-lg-0">
+    <div class="collapse navbar-collapse my-2 my-lg-0 p-3" id="navbarSupportedContent">
+      <!-- <form class="form-inline  ">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" >
         <button class="btn btn-outline-secondary" type="submit"><mat-icon>search</mat-icon></button>
         
-      </form>
+      </form> -->
       <ul class="navbar-nav ml-auto">
         <li class="nav-item" *ngIf="!isLoggedIn" routerLinkActive="active">
           <a class="nav-link" routerLink="/user">User</a>
@@ -44,13 +44,13 @@
           </ul>
     </div>
   </nav> -->
-  <div class="menu" *ngIf="isLoggedIn" >
+  <!-- <div class="menu" *ngIf="isLoggedIn" >
     <div class="inner-card mb-2 py-2">
       <a  class ="nav-item nav-link active" style="font-size: 16px;" routerLink="user">All</a>
       <a  class="nav-item nav-link" style="font-size: 16px;" routerLink="/">Fiction</a>
-      <a  class="nav-item nav-link" style="font-size: 16px;" routerLink="/">poetry</a>
+      <a  class="nav-item nav-link" style="font-size: 16px;" routerLink="/">Novel</a>
       <a  class="nav-item nav-link" style="font-size: 16px;" routerLink="/">history</a>
-    </div>
+    </div> -->
     <!-- <ul class="inner-card">
       <li class="nav-item active">
         <a class="nav-link" style="font-size: 16px;" aria-current="page" routerLink="user">All</a>
@@ -65,6 +65,11 @@
         <a class="nav-link" style="font-size: 16px;" routerLink="user">History</a>
       </li>
     </ul> -->
-  </div>
-  
+  <!-- </div> -->
+  <footer class="text-center text-white fixed-bottom mb-1" style="background-color: #21081a;">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Read Now :  
+      <a class="text-light" href="https://BookTheEvent.com/">BookTheEvent.com</a>
+    </div>
+  </footer>
    

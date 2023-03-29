@@ -24,9 +24,9 @@ import { HomeComponent } from './home/home.component';
 import { CardInfoComponent } from './user/card-info/card-info.component';
 import { BookInfoComponent } from './user/book-info/book-info.component';
 import { FictionBookComponent } from './fiction-book/fiction-book.component';
+import { HttpClientModule } from '@angular/common/http';
 
-
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
@@ -48,6 +48,7 @@ import { FictionBookComponent } from './fiction-book/fiction-book.component';
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatIconModule,
+    Ng2SearchPipeModule,
     MatToolbarModule,
     MatAutocompleteModule,
     MatFormFieldModule,
@@ -56,7 +57,8 @@ import { FictionBookComponent } from './fiction-book/fiction-book.component';
     ReactiveFormsModule,
     MatCardModule,
     MatButtonModule,
-    DragDropModule
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
